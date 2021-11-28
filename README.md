@@ -1,6 +1,6 @@
 # midnight - Theme for Trillium Notes
 
-*Inpired by the Siyuan note taking app. I adapted the theme to the styling ideas of their midnight theme*
+*Inpired by the Siyuan note taking app. Adapted from the styling ideas of their midnight theme.*
 
 ![preview-midnight](https://user-images.githubusercontent.com/34311583/143777745-b90982fc-71c7-44a8-a87a-f51710d6273c.jpg)
 
