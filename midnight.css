@@ -1,297 +1,337 @@
 :root {
-  --darkestBG: #212224;
-  --darkerBG: #292a2d;
-  --darkBG: #353637;
+    --darkestBG: #212224;
+    --darkerBG: #292a2d;
+    --darkBG: #353637;
 }
 body {
-  --main-font-family: "quote", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
-  --main-text-color: #c9d1d9;
-  --muted-text-color: #757d86;
-  --menu-text-color: var(--main-text-color);
-  --main-background-color: var(--darkestBG);
-  --main-border-color: #7a8ba654;
-  --accented-background-color: #232425;
-  --more-accented-background-color: #4c4e68;
-  --header-background-color: #393838;
-  --button-background-color: ;
-  --button-border-color: #8d9ca39c;
-  --button-border-radius: 0px;
-  --link-color: #52a2ff;
-  --modal-background-color: #282525;
-  --launcher-pane-background-color: var(--darkBG);
-  --left-pane-background-color: var(--darkerBG);
-  --left-pane-text-color: #9aa0a6;
-  --inactive-tab-background-color: var(--darkBG);
-  --accented-background-color: var(--darkerBG);
-  --more-accented-background-color: var(--darkBG);
-  --active-tab-background-color: var(--darkestBG);
-  --active-item-background-color: var(--darkBG);
-  --modal-background-color: var(--darkestBG);
-  --active-item-text-color: var(--main-text-color);
-  --menu-background-color: #27282a;
-  --tooltip-background-color: rgba(70, 72, 76, .86);
-  --hover-item-background-color: #3f4041;
-  --hover-item-text-color: var(--menu-text-color);
-  --tree-font-family: var(--main-font-family);
-  --detail-font-family: var(--main-font-family);
+    --main-font-family: "quote", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", "EmojiSymbols";
+    --main-text-color: #c9d1d9;
+    --muted-text-color: #757d86;
+    --menu-text-color: var(--main-text-color);
+    --main-background-color: var(--darkestBG);
+    --main-border-color: #7a8ba654;
+    --accented-background-color: #232425;
+    --more-accented-background-color: #4c4e68;
+    --header-background-color: #393838;
+    --button-background-color: ;
+    --button-border-color: #8d9ca39c;
+    --button-border-radius: 0px;
+    --link-color: #52a2ff;
+    --modal-background-color: #282525;
+    --launcher-pane-background-color: var(--darkBG);
+    --left-pane-background-color: var(--darkerBG);
+    --left-pane-text-color: #9aa0a6;
+    --inactive-tab-background-color: var(--darkBG);
+    --accented-background-color: var(--darkerBG);
+    --more-accented-background-color: var(--darkBG);
+    --active-tab-background-color: var(--darkestBG);
+    --active-item-background-color: var(--darkBG);
+    --modal-background-color: var(--darkestBG);
+    --active-item-text-color: var(--main-text-color);
+    --menu-background-color: #27282a;
+    --tooltip-background-color: rgba(70, 72, 76, .86);
+    --hover-item-background-color: #3f4041;
+    --hover-item-text-color: var(--menu-text-color);
+    --tree-font-family: var(--main-font-family);
+    --detail-font-family: var(--main-font-family);
 }
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700 !important;
+    font-weight: 700 !important;
+}
+#root-widget h2 {
+    margin-block-start: 1em;
+    margin-block-end: 0.83em;
+}
+#root-widget h3 {
+    margin-block-start: 1.2em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;   
 }
 .CodeMirror-lines {
   font-size: 1rem !important;
 }
 
-
+/* Note Title */
+#root-widget .title-row {
+    margin-bottom: 15px;
+}
+#root-widget .note-title {
+    font-size: 160%;
+    line-height: 50px;
+}
+/* Note Content *//*
+#root-widget .note-detail-editable-text {
+    padding-top: 0;
+}
+#root-widget .CodeMirror-lines {
+    padding-top: 0;
+}
+#root-widget .ribbon-container {
+    margin-bottom: 15px;
+}*/
 /* Notecards */
 #root-widget .note-book-card {
-  border-radius: 5px;
-  margin: 4px 7px 4px 0;
-} 
+    border-radius: 5px;
+    margin: 4px 7px 4px 0;
+}
+#root-widget .note-book-card h2 {
+    font-size: 1.25em;
+    margin-block-start: 0.3em;
+}
+#root-widget .note-book-card .note-book-title .rendered-note-attributes {
+    font-weight: 400;
+}
 /* Tab bar */
 #root-widget .tab-row-widget {
-  margin-left: -5px;
-  width: calc(100% + 5px);
-  padding-left: 5px;
-  height: 34px;
+    margin-left: -5px;
+    width: calc(100% + 5px);
+    padding-left: 5px;
+    height: 34px;
 }
 #root-widget .tab-row-widget-container {
-  background: var(--darkBG);
-  height: 34px;
-}
+    background: var(--darkBG);
+    height: 34px;
+ }
 #root-widget .note-tab-wrapper {
-  height: 34px;
-  line-height: 34px;
-  padding: 1px 6px 0 11px;
+    height: 34px;
+    line-height: 34px;
+    padding: 1px 6px 0 11px;
 }
 #root-widget .note-tab-wrapper:hover {
-  background-color: var(--hover-item-background-color);
+    background-color: var(--hover-item-background-color);
 }
 #root-widget .tab-row-widget .note-tab[active] .note-tab-wrapper {
-  font-weight: 400;
+    font-weight: 400;
 }
 #root-widget .note-new-tab {
-  line-height: 34px;
-  height: 34px;
-  width: 34px;
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
 }
 #root-widget .note-new-tab:hover {
-  background-color: var(--hover-item-background-color);
-  color: var(--hover-item-text-color);
+    background-color: var(--hover-item-background-color);
+    color: var(--hover-item-text-color);
 }
 #root-widget .tab-row-widget .note-tab .note-tab-close span, #root-widget .note-new-tab {
-  font-size: inherit;
-  top: 0;
-  color: var(--muted-text-color);
+    font-size: inherit;
+    top: 0;
+    color: var(--muted-text-color);
 }
 /* Menus & Tooltips */
 #root-widget .dropdown-menu {
-  padding: 3px 0 4px;
-  margin: 0;
-  box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
-  border: none;
+    padding: 3px 0 4px;
+    margin: 0;
+    box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+    border: none;
 }
 .dropdown-item {
-  padding: 3px 10px 2.5px !important;
-  line-height: 24px;
+    padding: 3px 10px 2.5px !important;
+    line-height: 24px;
 }
 .dropdown-item kbd {
-  margin-left: 10px;
-  font-family:  var(--main-font-family) !important;
-  font-weight: 300 !important;
-  font-size: 0.80rem;
-  color: #9aa0a6 !important;
+    margin-left: 10px;
+    font-family:  var(--main-font-family) !important;
+    font-weight: 300 !important;
+    font-size: 0.80rem;
+    color: #9aa0a6 !important;
 }
 .dropdown-item span.bx {
-  line-height: 24px;
-  font-size: 0.90rem;
-  margin-right: 3px;
-  color: #9aa0a6 !important;
+    line-height: 24px;
+    font-size: 0.90rem;
+    margin-right: 3px;
+    color: #9aa0a6 !important;
 }
 .dropdown-item.disabled span {
-  color: #757d86 !important;    
+ color: #757d86 !important;    
 }
 .dropdown-divider, .modal-header, .modal-footer {
-  border-color: var(--darkBG) !important;
+    border-color: var(--darkBG) !important;
 }
 .dropdown-item:focus, .dropdown-item:hover {
-  background-color: var(--darkBG) !important;
-  border: none !important;
-  outline: none;
+    background-color: var(--darkBG) !important;
+    border: none !important;
+    outline: none;
 }
 .tooltip-inner {
-  padding: 4px 6px 5.5px !important;
-  font-size: 0.95rem;
+    padding: 4px 6px 5.5px !important;
+    font-size: 0.95rem;
 }
 /* Left Pane */
 #root-widget #launcher-pane {
-  width: 46px !important;   
+ width: 46px !important;   
 }
 #root-widget #launcher-pane .global-menu-button {
-  background-size: 26px;
+    background-size: 26px;
 }
 #root-widget #launcher-pane .icon-action {
-  width: 46px;
-  height: 42px;
-  line-height: 42px;
-  padding: 0 10px;
-  outline: none;
+    width: 46px;
+    height: 42px;
+    line-height: 42px;
+    padding: 0 10px;
+    outline: none;
 }
 #root-widget #launcher-pane .icon-action:hover {
-  color: var(--main-text-color);
-  background-color: transparent;
+    color: var(--main-text-color);
+    background-color: transparent;
 }
 /* Tree */
 .fancytree-node:not(.fancytree-loading) .fancytree-expander:before {
-  font-size: 1rem !important;
+    font-size: 1rem !important;
 }
 .tree-actions {
-  border: 1px solid #22272e;
-  border-bottom: 0;
+    border: 1px solid #22272e;
+    border-bottom: 0;
 }
 #root-widget button.tree-floating-button {
-  font-size: 1.3em;
-  border: none;
+    font-size: 1.3em;
+    border: none;
 }
 #root-widget button.tree-floating-button:hover {
-  color: var(--main-text-color);
+    color: var(--main-text-color);
 }
 .ui-fancytree ul {
-  padding-left: 0 !important;
+    padding-left: 0 !important;
 }
 .ui-fancytree span.fancytree-active, .ui-fancytree span.fancytree-active.fancytree-selected {
-  border: none;
+    border: none;
 }
 span.fancytree-active .fancytree-title {
-  font-weight: 400 !important;
+    font-weight: 400 !important;
 }
 .ui-fancytree span.fancytree-node:hover {
-  background: #3f4041;
-  border: none;
+    background: #3f4041;
+    border: none;
 }
 #root-widget .bx.tree-item-button {
-  font-size: inherit;
-  line-height: 38px;
-  height: 38px;
-  padding-top: 2px;
-  border: none;
-  position: absolute;
-  right: 10px;
+    font-size: inherit;
+    line-height: 38px;
+    height: 38px;
+    padding-top: 2px;
+    border: none;
+    position: absolute;
+    right: 0px;
+    background: #3f4041;
+    padding: 0 10px 0 5px;
+    border-radius: 0;
+}
+#root-widget .fancytree-active .bx.tree-item-button {
+    background: var(--active-item-background-color);
 }
 /* Left-Pane Nested List - full width background for hover and active status. 
 It's also possible to use Themes jQuery Script. Without the script use the code below. Extend for deeper nesting structure if neccecary */
 .ui-fancytree > li > span.fancytree-node {
-  padding-left: 10px !important;
+    padding-left: 10px !important;
 } 
 .ui-fancytree > li > ul > li > span.fancytree-node {
-  padding-left: 10px !important;
+    padding-left: 10px !important;
 }
 .ui-fancytree li li li span.fancytree-node {
-  padding-left: 25px;
+    padding-left: 25px;
 }
 .ui-fancytree li li li li span.fancytree-node {
-  padding-left: 40px;
+    padding-left: 40px;
 }
 .ui-fancytree li li li li li span.fancytree-node {
-  padding-left: 55px;
+    padding-left: 55px;
 }
 .ui-fancytree li li li li li li span.fancytree-node {
-  padding-left: 70px;
+    padding-left: 70px;
 }
 .ui-fancytree li li li li li li li span.fancytree-node {
-  padding-left: 85px;
+    padding-left: 85px;
 }
 .ui-fancytree li li li li li li li li span.fancytree-node {
-  padding-left: 100px;
+    padding-left: 100px;
 }
 .ui-fancytree li li li li li li li li li span.fancytree-node {
-  padding-left: 115px;
+    padding-left: 115px;
 }
 .ui-fancytree li li li li li li li li li li span.fancytree-node {
-  padding-left: 130px;
+    padding-left: 130px;
 }
 .ui-fancytree li li li li li li li li li li li span.fancytree-node {
-  padding-left: 145px;
+    padding-left: 145px;
 }
 /*** General Fixes ***/
 /* Borders */
 .note-tab-wrapper, .fancytree-node {
-  border-radius: 0 !important;
+    border-radius: 0 !important;
 }
 .note-tab-wrapper {
-  border-right: 1px solid var(--darkestBG);
-  margin-left: -5px;
+    border-right: 1px solid var(--darkestBG);
+    margin-left: -5px;
 }
 .note-title-widget input {
-  outline: none !important;
-  font-weight: 700;
+    outline: none !important;
+    font-weight: 700;
 }
 /* Icons */
 #root-widget #launcher-pane .icon-action, #root-widget .ribbon-tab-title .bx {
-  font-size: 1.3rem;
-  text-align: center;
+    font-size: 1.3rem;
+    text-align: center;
 }
 /* Scrollbars */
 ::-webkit-scrollbar {
-  width: 8px !important;
+    width: 8px !important;
 }
 ::-webkit-scrollbar-thumb {
-  background: #4f5052 !important;
-  border-width: 0 !important;
-  border-radius: 0 !important;
+    background: #4f5052 !important;
+    border-width: 0 !important;
+    border-radius: 0 !important;
 }
 /* Cursors */
 .gutter.gutter-horizontal {
-  cursor: col-resize !important;
+    cursor: col-resize !important;
 }
 /* Modal Options */
 #options-dialog .modal-content .modal-header {
-  padding: 10px 15px 10px 25px !important;
+    padding: 10px 15px 10px 25px !important;
 }
 .modal-content .close {
-  font-size: 1.3rem !important;
-  font-weight: inherit !important;   
+    font-size: 1.3rem !important;
+    font-weight: inherit !important;   
 }
 .modal-content h2, .modal-content h3, .modal-content h4, .modal-content h5 {
-  font-weight: 600 !important;
-  color: var(--main-text-color);
-  font-size: 1rem !important;
+    font-weight: 600 !important;
+    color: var(--main-text-color);
+    font-size: 1rem !important;
 }
 .modal-content h4 {
-  /*border-top: 1px solid rgba(230, 230, 230, 0.1) !important;*/
-  padding-top: 5px !important;
+    /*border-top: 1px solid rgba(230, 230, 230, 0.1) !important;*/
+    padding-top: 5px !important;
 }
 .modal-body > div > br {
-  display: none !important;
+    display: none !important;
 }
 .modal-content .options-advanced h4:first-child {
-  border-top: none !important;
+    border-top: none !important;
 }
 .modal-body h5 {
-  font-size: 1rem !important;
-  font-weight: 400 !important;
+    font-size: 1rem !important;
+    font-weight: 400 !important;
 }
 #options-dialog .modal-body {
-  padding: 0 !important;
-  color: #9aa0a6;
+    padding: 0 !important;
+    color: #9aa0a6;
 }
 .modal-body #override-theme-fonts {
-  width: 18px !important;
+    width: 18px !important;
 }
 #options-dialog .modal-content .tab-content {
-  padding: 24px !important;
+    padding: 24px !important;
 }
 #options-dialog .modal-content .nav-tabs {
-  background-color: var(--darkBG);
-  border: none;
-  padding: 0 24px;
+    background-color: var(--darkBG);
+    border: none;
+    padding: 0 24px;
 }
 .modal-content .nav-tabs .nav-link {
-  color: var(--main-text-color) !important;
-  border: none !important;
-  border-radius: 0 !important;
-  margin-bottom: 0;
+    color: var(--main-text-color) !important;
+    border: none !important;
+    border-radius: 0 !important;
+    margin-bottom: 0;
 }
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-  background-color: #3f4041!important;
+    background-color: #3f4041!important;
 }
