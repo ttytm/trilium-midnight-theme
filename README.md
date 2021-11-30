@@ -11,7 +11,7 @@ _(Might be outdated)_
 - Create a new note inside your Trilium Notes and set the Note Type to _CSS_
 - Copy the content of the themes .css file inside the Note you just created
 - Add the label _#appCss_ 
-  - You can do that in the _Owned Attributes_ on the top of your note 
+  - You can do that in the _Owned Attributes_ on the top of your note (Alt+A)
   - If are currently using other custom themes, make sure the midnight theme is the only one with the _#appCss_ label 
 - Reload (Ctrl+R) 
 
