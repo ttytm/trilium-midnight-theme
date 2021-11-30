@@ -1,6 +1,6 @@
 # midnight - Theme for Trilium Notes
 
-*Inpired by the Siyuan note taking app. The styling ideas used are adapted from their midnight theme.*
+*Inpired by the SiYuan note taking app. The styling ideas used are adapted from their midnight theme.*
 
 ## Preivew:
 _(Might be outdated)_
