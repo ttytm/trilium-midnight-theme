@@ -1,16 +1,11 @@
 :root {
+  /* Color Palette */
   --darkestBG: #212224;
   --darkerBG: #292a2d;
   --darkBG: #353637;
 }
 body {
-  --main-font-family: "quote", "Helvetica Neue", "Luxi Sans", "DejaVu Sans",
-    "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
-    "EmojiSymbols";
-  --main-text-color: #c9d1d9;
-  --muted-text-color: #757d86;
-  --menu-text-color: var(--main-text-color);
+  /* Backgrounds */
   --main-background-color: var(--darkestBG);
   --main-border-color: #7a8ba654;
   --accented-background-color: #232425;
@@ -18,7 +13,6 @@ body {
   --header-background-color: #393838;
   --button-border-color: #8d9ca39c;
   --button-border-radius: 0px;
-  --link-color: #52a2ff;
   --modal-background-color: #282525;
   --launcher-pane-background-color: var(--darkBG);
   --left-pane-background-color: var(--darkerBG);
@@ -29,21 +23,34 @@ body {
   --active-tab-background-color: var(--darkestBG);
   --active-item-background-color: var(--darkBG);
   --modal-background-color: var(--darkestBG);
-  --active-item-text-color: var(--main-text-color);
   --menu-background-color: #27282a;
   --tooltip-background-color: rgba(70, 72, 76, 0.86);
   --hover-item-background-color: #3f4041;
+  /* Fonts */
+  --main-font-family: "quote", "Helvetica Neue", "Luxi Sans", "DejaVu Sans",
+    "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
+    "EmojiSymbols";
+  --main-text-color: #c9d1d9;
+  --menu-text-color: var(--main-text-color);
   --hover-item-text-color: var(--menu-text-color);
   --tree-font-family: var(--main-font-family);
   --detail-font-family: var(--main-font-family);
+  --active-item-text-color: var(--main-text-color);
+  --link-color: #52a2ff;
+  --muted-text-color: #757d86;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700 !important;
+
+/* Using #root-widget ID to override main theme styles without the use of !important */
+
+/* Typography General */
+#root-widget h1,
+#root-widget h2,
+#root-widget h3,
+#root-widget h4,
+#root-widget h5,
+#root-widget h6 {
+  font-weight: 700;
 }
 #root-widget h2 {
   margin-block-start: 1em;
@@ -55,10 +62,9 @@ h6 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-.CodeMirror-lines {
-  font-size: 1rem !important;
+#root-widget .CodeMirror-lines {
+  font-size: 1rem;
 }
-
 /* Note Title */
 #root-widget .title-row {
   margin-bottom: 15px;
@@ -67,16 +73,6 @@ h6 {
   font-size: 160%;
   line-height: 50px;
 }
-/* Note Content */ /*
-#root-widget .note-detail-editable-text {
-  padding-top: 0;
-}
-#root-widget .CodeMirror-lines {
-  padding-top: 0;
-}
-#root-widget .ribbon-container {
-  margin-bottom: 15px;
-}*/
 /* Notecards */
 #root-widget .note-book-card {
   margin: 4px 7px 4px 0;
@@ -135,44 +131,44 @@ h6 {
   box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
     0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
 }
-.dropdown-item {
-  padding: 3px 10px 2.5px !important;
+#root-widget .dropdown-item {
+  padding: 3px 10px 2.5px;
   line-height: 24px;
 }
-.dropdown-item kbd {
+#root-widget .dropdown-item kbd {
   margin-left: 10px;
-  color: #9aa0a6 !important;
-  font-weight: 300 !important;
+  color: #9aa0a6;
+  font-weight: 300;
   font-size: 0.8rem;
-  font-family: var(--main-font-family) !important;
+  font-family: var(--main-font-family);
 }
-.dropdown-item span.bx {
+#root-widget .dropdown-item span.bx {
   margin-right: 3px;
-  color: #9aa0a6 !important;
+  color: #9aa0a6;
   font-size: 0.9rem;
   line-height: 24px;
 }
-.dropdown-item.disabled span {
-  color: #757d86 !important;
+#root-widget .dropdown-item.disabled span {
+  color: #757d86;
 }
-.dropdown-divider,
-.modal-header,
-.modal-footer {
-  border-color: var(--darkBG) !important;
+#root-widget .dropdown-divider,
+#root-widget .modal-header,
+#root-widget .modal-footer {
+  border-color: var(--darkBG);
 }
-.dropdown-item:focus,
-.dropdown-item:hover {
+#root-widget .dropdown-item:focus,
+#root-widget .dropdown-item:hover {
   outline: none;
-  border: none !important;
-  background-color: var(--darkBG) !important;
+  border: none;
+  background-color: var(--darkBG);
 }
-.tooltip-inner {
-  padding: 4px 6px 5.5px !important;
+#root-widget .tooltip-inner {
+  padding: 4px 6px 5.5px;
   font-size: 0.95rem;
 }
 /* Left Pane */
 #root-widget #launcher-pane {
-  width: 46px !important;
+  width: 46px;
 }
 #root-widget #launcher-pane .global-menu-button {
   background-size: 26px;
@@ -189,8 +185,10 @@ h6 {
   color: var(--main-text-color);
 }
 /* Tree */
-.fancytree-node:not(.fancytree-loading) .fancytree-expander:before {
-  font-size: 1rem !important;
+#root-widget
+  .fancytree-node:not(.fancytree-loading)
+  .fancytree-expander:before {
+  font-size: 1rem;
 }
 .tree-actions {
   border: 1px solid #22272e;
@@ -203,15 +201,12 @@ h6 {
 #root-widget button.tree-floating-button:hover {
   color: var(--main-text-color);
 }
-.ui-fancytree ul {
-  padding-left: 0 !important;
-}
 .ui-fancytree span.fancytree-active,
 .ui-fancytree span.fancytree-active.fancytree-selected {
   border: none;
 }
-span.fancytree-active .fancytree-title {
-  font-weight: 400 !important;
+#root-widget span.fancytree-active .fancytree-title {
+  font-weight: 400;
 }
 .ui-fancytree span.fancytree-node:hover {
   border: none;
@@ -232,14 +227,17 @@ span.fancytree-active .fancytree-title {
 #root-widget .fancytree-active .bx.tree-item-button {
   background: var(--active-item-background-color);
 }
+#root-widget .ui-fancytree ul {
+  padding-left: 0;
+}
 /* Left-Pane Nested List - full width background for hover and active status. 
 It's also possible to use Themes jQuery Script. Without the script use the code below. 
 Extend for deeper nesting structure if neccecary */
 .ui-fancytree > li > span.fancytree-node {
-  padding-left: 10px !important;
+  padding-left: 10px;
 }
 .ui-fancytree > li > ul > li > span.fancytree-node {
-  padding-left: 10px !important;
+  padding-left: 10px;
 }
 .ui-fancytree li li li span.fancytree-node {
   padding-left: 25px;
@@ -270,16 +268,16 @@ Extend for deeper nesting structure if neccecary */
 }
 /*** General Fixes ***/
 /* Borders */
-.note-tab-wrapper,
-.fancytree-node {
-  border-radius: 0 !important;
+#root-widget .note-tab-wrapper,
+#root-widget .fancytree-node {
+  border-radius: 0;
 }
 .note-tab-wrapper {
   margin-left: -5px;
   border-right: 1px solid var(--darkestBG);
 }
-.note-title-widget input {
-  outline: none !important;
+#root-widget .note-title-widget input {
+  outline: none;
   font-weight: 700;
 }
 /* Icons */
@@ -287,19 +285,6 @@ Extend for deeper nesting structure if neccecary */
 #root-widget .ribbon-tab-title .bx {
   text-align: center;
   font-size: 1.3rem;
-}
-/* Scrollbars */
-::-webkit-scrollbar {
-  width: 8px !important;
-}
-::-webkit-scrollbar-thumb {
-  border-width: 0 !important;
-  border-radius: 0 !important;
-  background: #4f5052 !important;
-}
-/* Cursors */
-.gutter.gutter-horizontal {
-  cursor: col-resize !important;
 }
 /* Modal Options */
 #options-dialog .modal-content .modal-header {
@@ -355,4 +340,17 @@ Extend for deeper nesting structure if neccecary */
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
   background-color: #3f4041 !important;
+}
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 8px !important;
+}
+::-webkit-scrollbar-thumb {
+  border-width: 0 !important;
+  border-radius: 0 !important;
+  background: #4f5052 !important;
+}
+/* Cursors */
+.gutter.gutter-horizontal {
+  cursor: col-resize !important;
 }
