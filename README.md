@@ -5,7 +5,7 @@
 ## Preivew:
 _(Might be outdated)_
 
-![preview-midnight](https://user-images.githubusercontent.com/34311583/143777745-b90982fc-71c7-44a8-a87a-f51710d6273c.jpg)
+![Trilium Notes - Midnight_001](https://user-images.githubusercontent.com/34311583/143969208-537b418a-39e8-4162-a87c-e712665f2fe8.jpg)
 
 ## Installation
 - Create a new note inside your Trilium Notes and set the Note Type to _CSS_
