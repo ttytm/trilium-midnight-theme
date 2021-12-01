@@ -105,12 +105,16 @@ body {
 #root-widget .note-tab-wrapper:hover {
   background-color: var(--hover-item-background-color);
 }
+#root-widget .tab-row-widget .note-tab[active] .note-tab-wrapper:hover {
+  background-color: var(--active-tab-background-color);
+}
 #root-widget .tab-row-widget .note-tab[active] .note-tab-wrapper {
   font-weight: 400;
 }
 #root-widget .note-new-tab {
   width: 34px;
   height: 34px;
+  border-radius: 0;
   line-height: 34px;
 }
 #root-widget .note-new-tab:hover {
