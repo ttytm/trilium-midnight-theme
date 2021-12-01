@@ -127,50 +127,6 @@ body {
   color: var(--muted-text-color);
   font-size: inherit;
 }
-/* Menus & Tooltips */
-/* #root-widget not applicable */
-.dropdown-menu {
-  margin: 0 !important;
-  padding: 3px 0 4px !important;
-  border: none !important;
-  box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
-    0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12) !important;
-}
-.dropdown-item {
-  padding: 3px 10px 2.5px !important;
-  line-height: 24px !important;
-}
-.dropdown-item kbd {
-  margin-left: 10px !important;
-  color: #9aa0a6 !important;
-  font-weight: 300 !important;
-  font-size: 0.8rem !important;
-  font-family: var(--main-font-family) !important;
-}
-.dropdown-item span.bx {
-  margin-right: 3px !important;
-  color: #9aa0a6 !important;
-  font-size: 0.9rem !important;
-  line-height: 24px !important;
-}
-.dropdown-item.disabled span {
-  color: #757d86 !important;
-}
-.dropdown-divider,
-.modal-header,
-.modal-footer {
-  border-color: var(--darkBG) !important;
-}
-.dropdown-item:focus,
-.dropdown-item:hover {
-  outline: none !important;
-  border: none !important;
-  background-color: var(--darkBG) !important;
-}
-.tooltip-inner {
-  padding: 5px 6px 6px !important;
-  font-size: 0.95rem !important;
-}
 /* Left Pane */
 #root-widget #launcher-pane {
   width: 46px;
@@ -291,6 +247,50 @@ Extend for deeper nesting structure if neccecary */
 #root-widget .ribbon-tab-title .bx {
   text-align: center;
   font-size: 1.3rem;
+}
+/* Menus & Tooltips */
+/* #root-widget not applicable */
+.dropdown-menu {
+  margin: 0 !important;
+  padding: 3px 0 4px !important;
+  border: none !important;
+  box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
+    0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12) !important;
+}
+.dropdown-item {
+  padding: 3px 10px 2.5px !important;
+  line-height: 24px !important;
+}
+.dropdown-item kbd {
+  margin-left: 10px !important;
+  color: #9aa0a6 !important;
+  font-weight: 300 !important;
+  font-size: 0.8rem !important;
+  font-family: var(--main-font-family) !important;
+}
+.dropdown-item span.bx {
+  margin-right: 3px !important;
+  color: #9aa0a6 !important;
+  font-size: 0.9rem !important;
+  line-height: 24px !important;
+}
+.dropdown-item.disabled span {
+  color: #757d86 !important;
+}
+.dropdown-divider,
+.modal-header,
+.modal-footer {
+  border-color: var(--darkBG) !important;
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+  outline: none !important;
+  border: none !important;
+  background-color: var(--darkBG) !important;
+}
+.tooltip-inner {
+  padding: 5px 6px 6px !important;
+  font-size: 0.95rem !important;
 }
 /* Modal Options */
 #options-dialog .modal-content .modal-header {
