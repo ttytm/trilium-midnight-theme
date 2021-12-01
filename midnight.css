@@ -128,47 +128,47 @@ body {
   font-size: inherit;
 }
 /* Menus & Tooltips */
-#root-widget .dropdown-menu {
-  margin: 0;
-  padding: 3px 0 4px;
-  border: none;
+.dropdown-menu {
+  margin: 0 !important;
+  padding: 3px 0 4px !important;
+  border: none !important;
   box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
-    0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+    0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12) !important;
 }
-#root-widget .dropdown-item {
-  padding: 3px 10px 2.5px;
-  line-height: 24px;
+.dropdown-item {
+  padding: 3px 10px 2.5px !important;
+  line-height: 24px !important;
 }
-#root-widget .dropdown-item kbd {
-  margin-left: 10px;
-  color: #9aa0a6;
-  font-weight: 300;
-  font-size: 0.8rem;
-  font-family: var(--main-font-family);
+.dropdown-item kbd {
+  margin-left: 10px !important;
+  color: #9aa0a6 !important;
+  font-weight: 300 !important;
+  font-size: 0.8rem !important;
+  font-family: var(--main-font-family) !important;
 }
-#root-widget .dropdown-item span.bx {
-  margin-right: 3px;
-  color: #9aa0a6;
-  font-size: 0.9rem;
-  line-height: 24px;
+.dropdown-item span.bx {
+  margin-right: 3px !important;
+  color: #9aa0a6 !important;
+  font-size: 0.9rem !important;
+  line-height: 24px !important;
 }
-#root-widget .dropdown-item.disabled span {
-  color: #757d86;
+.dropdown-item.disabled span {
+  color: #757d86 !important;
 }
-#root-widget .dropdown-divider,
-#root-widget .modal-header,
-#root-widget .modal-footer {
-  border-color: var(--darkBG);
+.dropdown-divider,
+.modal-header,
+.modal-footer {
+  border-color: var(--darkBG) !important;
 }
-#root-widget .dropdown-item:focus,
-#root-widget .dropdown-item:hover {
-  outline: none;
-  border: none;
-  background-color: var(--darkBG);
+.dropdown-item:focus,
+.dropdown-item:hover {
+  outline: none !important;
+  border: none !important;
+  background-color: var(--darkBG) !important;
 }
-#root-widget .tooltip-inner {
-  padding: 4px 6px 5.5px;
-  font-size: 0.95rem;
+.tooltip-inner {
+  padding: 5px 6px 6px !important;
+  font-size: 0.95rem !important;
 }
 /* Left Pane */
 #root-widget #launcher-pane {
@@ -202,7 +202,8 @@ body {
   border: none;
   font-size: 1.3em;
 }
-#root-widget button.tree-floating-button:hover {
+#root-widget button.tree-floating-button:hover,
+#root-widget .bx.tree-item-button:hover {
   color: var(--main-text-color);
 }
 .ui-fancytree span.fancytree-active,
