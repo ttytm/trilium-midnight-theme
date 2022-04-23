@@ -1,6 +1,8 @@
 # midnight - Theme for Trilium Notes
 
-*Inpired by the SiYuan note taking app. The styling ideas used are adapted from their midnight theme.*
+A theme with soft dark colors and styling that aims to be pleasant to look at.  
+
+*The style of the theme is familiar to the theme choices of many modern programs. For e.g. it is close to VSCode's default dark themes. The creation of this theme for trilium was mainly inspired by SiYuans (PKM Tool) midnight theme.*
 
 ## Preivew:
 _(Might be outdated)_
