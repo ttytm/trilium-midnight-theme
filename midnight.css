@@ -24,10 +24,6 @@
     "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
     "EmojiSymbols";
-  --midnight-font-code: "JetBrainsMono-Regular", mononoki, Consolas,
-    "Liberation Mono", Menlo, Courier, monospace, "Apple Color Emoji",
-    "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
-    "EmojiSymbols";
 }
 body {
   --main-background-color: var(--midnight-background-color-primary);
@@ -94,12 +90,6 @@ h6 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-/* Icons */
-#root-widget #launcher-pane .icon-action,
-#root-widget .ribbon-tab-title .bx {
-  text-align: center;
-  font-size: 1.3rem;
-}
 /* Note Title */
 #root-widget .title-row {
   margin-bottom: 15px;
@@ -111,6 +101,16 @@ h6 {
 #root-widget .note-title-widget input {
   outline: none;
   font-weight: 700;
+}
+/* Code Mirror */
+#root-widget .CodeMirror-lines {
+  font-size: 1rem;
+}
+/* Icons */
+#root-widget #launcher-pane .icon-action,
+#root-widget .ribbon-tab-title .bx {
+  text-align: center;
+  font-size: 1.3rem;
 }
 
 /* ===[ 2. Components ]=== */
@@ -125,12 +125,6 @@ h6 {
 }
 #root-widget .note-book-card .note-book-title .rendered-note-attributes {
   font-weight: 400;
-}
-#root-widget .CodeMirror {
-  --main-font-family: var(--midnight-font-code);
-}
-#root-widget .CodeMirror-lines {
-  font-size: 1rem;
 }
 
 /* ==[ 2.2. Tab Bar ]== */
