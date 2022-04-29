@@ -16,58 +16,57 @@
 /* ===[ 1. Global ]=== */
 /* ==[ 1.1. Color Palette & Variables ]== */
 :root {
-  --midnight-background-color-primary: #212224;
-  --midnight-background-color-secondary: #292a2d;
-  --midnight-background-color-tertiary: #353637;
-  --midnight-text-color-primary: #c9d1d9;
-  --midnight-font-main: "quote", "Helvetica Neue", "Luxi Sans", "DejaVu Sans",
-    "Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
-    "EmojiSymbols";
+	--midnight-background-color-primary: #212224;
+	--midnight-background-color-secondary: #292a2d;
+	--midnight-background-color-tertiary: #353637;
+	--midnight-font-main: "quote", "Helvetica Neue", "Luxi Sans", "DejaVu Sans",
+		"Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
+		"EmojiSymbols";
+	--midnight-text-color-primary: #c9d1d9;
 }
 body {
-  --main-background-color: var(--midnight-background-color-primary);
-  --accented-background-color: var(--midnight-background-color-secondary);
-  --more-accented-background-color: var(--midnight-background-color-tertiary);
-  --header-background-color: var(--midnight-background-color-tertiary);
-  --launcher-pane-background-color: var(--midnight-background-color-tertiary);
-  --menu-background-color: var(--midnight-background-color-secondary);
-  --modal-background-color: var(--midnight-background-color-primary);
-  --left-pane-background-color: var(--midnight-background-color-secondary);
-  --active-tab-background-color: var(--midnight-background-color-primary);
-  --inactive-tab-background-color: var(--midnight-background-color-tertiary);
-  --active-item-background-color: var(--midnight-background-color-tertiary);
-  --tooltip-background-color: rgba(70, 72, 76, 0.86);
-  --hover-item-background-color: #3f4041;
-  --main-border-color: #7a8ba654;
-  --button-border-color: #8d9ca39c;
-  --button-border-radius: 0px;
-
-  --main-font-family: var(--midnight-font-main);
-  --tree-font-family: var(--main-font-family);
-  --detail-font-family: var(--main-font-family);
-  --main-text-color: var(--midnight-text-color-primary);
-  --menu-text-color: var(--main-text-color);
-  --active-item-text-color: var(--main-text-color);
-  --hover-item-text-color: var(--menu-text-color);
-  --left-pane-text-color: #9aa0a6;
-  --link-color: #52a2ff;
-  --muted-text-color: #757d86;
+	--main-background-color: var(--midnight-background-color-primary);
+	--accented-background-color: var(--midnight-background-color-secondary);
+	--more-accented-background-color: var(--midnight-background-color-tertiary);
+	--menu-background-color: var(--midnight-background-color-secondary);
+	--header-background-color: var(--midnight-background-color-tertiary);
+	--launcher-pane-background-color: var(--midnight-background-color-tertiary);
+	--left-pane-background-color: var(--midnight-background-color-secondary);
+	--modal-background-color: var(--midnight-background-color-primary);
+	--active-tab-background-color: var(--midnight-background-color-primary);
+	--inactive-tab-background-color: var(--midnight-background-color-tertiary);
+	--active-item-background-color: var(--midnight-background-color-tertiary);
+	--tooltip-background-color: rgba(70, 72, 76, 0.86);
+	--hover-item-background-color: #3f4041;
+	--main-border-color: #7a8ba654;
+	--button-border-color: #8d9ca39c;
+	--button-border-radius: 0px;
+	--main-font-family: var(--midnight-font-main);
+	--tree-font-family: var(--main-font-family);
+	--detail-font-family: var(--main-font-family);
+	--main-text-color: var(--midnight-text-color-primary);
+	--menu-text-color: var(--main-text-color);
+	--active-item-text-color: var(--main-text-color);
+	--hover-item-text-color: var(--menu-text-color);
+	--left-pane-text-color: #9aa0a6;
+	--link-color: #52a2ff;
+	--muted-text-color: #757d86;
 }
 
 /* ==[ 1.2. General Fixes ]== */
 /* Scrollbars */
 ::-webkit-scrollbar {
-  width: 8px !important;
+	width: 8px !important;
 }
 ::-webkit-scrollbar-thumb {
-  border-width: 0 !important;
-  border-radius: 0 !important;
-  background: #4f5052 !important;
+	border-width: 0 !important;
+	border-radius: 0 !important;
+	background: #4f5052 !important;
 }
 /* Cursors */
 .gutter.gutter-horizontal {
-  cursor: col-resize !important;
+	cursor: col-resize !important;
 }
 
 /* ==[ 1.3. Typography ]== */
@@ -77,304 +76,315 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700 !important;
+	font-weight: 700 !important;
 }
 /* Use #root-widget to override trillium default themes styles without the need to redundantly use !important */
 #root-widget h2 {
-  margin-block-start: 1em;
-  margin-block-end: 0.83em;
+	margin-block-start: 1em;
+	margin-block-end: 0.83em;
 }
 #root-widget h3 {
-  margin-block-start: 1.2em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+	margin-block-start: 1.2em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
 }
 /* Note Title */
 #root-widget .title-row {
-  margin-bottom: 15px;
+	margin-bottom: 15px;
 }
 #root-widget .note-title {
-  font-size: 160%;
-  line-height: 50px;
+	font-size: 160%;
+	line-height: 50px;
 }
 #root-widget .note-title-widget input {
-  outline: none;
-  font-weight: 700;
+	outline: none;
+	font-weight: 700;
 }
 /* Code Mirror */
 #root-widget .CodeMirror-lines {
-  font-size: 1rem;
+	font-size: 1rem;
 }
 /* Icons */
 #root-widget #launcher-pane .icon-action,
 #root-widget .ribbon-tab-title .bx {
-  text-align: center;
-  font-size: 1.3rem;
+	text-align: center;
+	font-size: 1.3rem;
 }
 
 /* ===[ 2. Components ]=== */
 /* ==[ 2.1. Note Cards ]== */
 #root-widget .note-book-card {
-  margin: 4px 7px 4px 0;
-  border-radius: 5px;
+	margin: 4px 7px 4px 0;
+	border-radius: 5px;
 }
 #root-widget .note-book-card h2 {
-  font-size: 1.25em;
-  margin-block-start: 0.3em;
+	font-size: 1.25em;
+
+	margin-block-start: 0.3em;
 }
 #root-widget .note-book-card .note-book-title .rendered-note-attributes {
-  font-weight: 400;
+	font-weight: 400;
 }
 
 /* ==[ 2.2. Tab Bar ]== */
 #root-widget .tab-row-widget {
-  margin-left: -5px;
-  padding-left: 5px;
-  width: calc(100% + 5px);
-  height: 34px;
+	margin-left: -5px;
+	padding-left: 5px;
+	width: calc(100% + 5px);
+	height: 34px;
 }
 #root-widget .tab-row-widget-container {
-  height: 34px;
-  background: var(--midnight-background-color-tertiary);
+	height: 34px;
+	background: var(--midnight-background-color-tertiary);
 }
 #root-widget .note-tab-wrapper {
-  padding: 1px 6px 0 11px;
-  height: 34px;
-  line-height: 34px;
-  border-radius: 0;
-  margin-left: -5px;
-  border-right: 1px solid var(--midnight-background-color-primary);
+	margin-left: -5px;
+	padding: 1px 6px 0 11px;
+	height: 34px;
+	border-right: 1px solid var(--midnight-background-color-primary);
+	border-radius: 0;
+	line-height: 34px;
 }
 #root-widget .note-tab-wrapper:hover {
-  background-color: var(--hover-item-background-color);
+	background-color: var(--hover-item-background-color);
 }
 #root-widget .tab-row-widget .note-tab[active] .note-tab-wrapper:hover {
-  background-color: var(--active-tab-background-color);
+	background-color: var(--active-tab-background-color);
 }
 #root-widget .tab-row-widget .note-tab[active] .note-tab-wrapper {
-  font-weight: 400;
+	font-weight: 400;
 }
 #root-widget .note-new-tab {
-  width: 34px;
-  height: 34px;
-  border-radius: 0;
-  line-height: 34px;
+	width: 34px;
+	height: 34px;
+	border-radius: 0;
+	line-height: 34px;
 }
 #root-widget .note-new-tab:hover {
-  background-color: var(--hover-item-background-color);
-  color: var(--hover-item-text-color);
+	background-color: var(--hover-item-background-color);
+	color: var(--hover-item-text-color);
+}
+#root-widget .tab-row-widget .note-tab .note-tab-close {
+	position: relative;
+	top: 5px;
+	height: 22px;
 }
 #root-widget .tab-row-widget .note-tab .note-tab-close span,
 #root-widget .note-new-tab {
-  top: 0;
-  color: var(--muted-text-color);
-  font-size: inherit;
+	top: -5px;
+	color: var(--muted-text-color);
+	font-size: inherit;
+}
+#root-widget .tab-row-widget .note-tab .note-tab-close:hover span {
+	color: var(--hover-item-text-color);
 }
 
 /* ==[ 2.3. Laucher Pane ]== */
 #root-widget #launcher-pane {
-  width: 46px;
+	width: 46px;
 }
 #root-widget #launcher-pane .global-menu-button {
-  background-size: 26px;
+	background-size: 26px;
 }
 #root-widget #launcher-pane .icon-action {
-  padding: 0 10px;
-  width: 46px;
-  height: 42px;
-  outline: none;
-  line-height: 42px;
+	padding: 0 10px;
+	width: 46px;
+	height: 42px;
+	outline: none;
+	line-height: 42px;
 }
 #root-widget #launcher-pane .icon-action:hover {
-  background-color: transparent;
-  color: var(--main-text-color);
+	background-color: transparent;
+	color: var(--main-text-color);
 }
 
 /* ==[ 2.4. File Tree ]== */
 #root-widget
-  .fancytree-node:not(.fancytree-loading)
-  .fancytree-expander:before {
-  font-size: 1rem;
+	.fancytree-node:not(.fancytree-loading)
+	.fancytree-expander:before {
+	font-size: 1rem;
 }
 #root-widget .fancytree-node {
-  border-radius: 0;
+	border-radius: 0;
 }
 .tree-actions {
-  border: 1px solid #22272e;
-  border-bottom: 0;
+	border: 1px solid #22272e;
+	border-bottom: 0;
 }
 #root-widget button.tree-floating-button {
-  border: none;
-  font-size: 1.3em;
+	border: none;
+	font-size: 1.3em;
 }
 #root-widget button.tree-floating-button:hover,
 #root-widget .bx.tree-item-button:hover {
-  color: var(--main-text-color);
+	color: var(--main-text-color);
 }
 .ui-fancytree span.fancytree-active,
 .ui-fancytree span.fancytree-active.fancytree-selected {
-  border: none;
+	border: none;
 }
 #root-widget span.fancytree-active .fancytree-title {
-  font-weight: 400;
+	font-weight: 400;
 }
 .ui-fancytree span.fancytree-node:hover {
-  border: none;
-  background: #3f4041;
+	border: none;
+	background: #3f4041;
 }
 #root-widget .bx.tree-item-button {
-  position: absolute;
-  right: 0px;
-  padding: 0 10px 0 5px;
-  padding-top: 2px;
-  height: 38px;
-  border: none;
-  border-radius: 0;
-  background: #3f4041;
-  font-size: inherit;
-  line-height: 38px;
+	position: absolute;
+	right: 0px;
+	padding: 0 10px 0 5px;
+	padding-top: 2px;
+	height: 38px;
+	border: none;
+	border-radius: 0;
+	background: #3f4041;
+	font-size: inherit;
+	line-height: 38px;
 }
 #root-widget .fancytree-active .bx.tree-item-button {
-  background: var(--active-item-background-color);
+	background: var(--active-item-background-color);
 }
 /* Use full width background for hover and active state of nested list items. 
 Extend the code below for deeper nesting structure if neccecary.
 As an alternative its possible to add aad a script that automates this. */
 #root-widget .ui-fancytree ul {
-  padding-left: 0;
+	padding-left: 0;
 }
 .ui-fancytree > li > span.fancytree-node {
-  padding-left: 10px;
+	padding-left: 10px;
 }
 .ui-fancytree > li > ul > li > span.fancytree-node {
-  padding-left: 10px;
+	padding-left: 10px;
 }
 .ui-fancytree li li li span.fancytree-node {
-  padding-left: 25px;
+	padding-left: 25px;
 }
 .ui-fancytree li li li li span.fancytree-node {
-  padding-left: 40px;
+	padding-left: 40px;
 }
 .ui-fancytree li li li li li span.fancytree-node {
-  padding-left: 55px;
+	padding-left: 55px;
 }
 .ui-fancytree li li li li li li span.fancytree-node {
-  padding-left: 70px;
+	padding-left: 70px;
 }
 .ui-fancytree li li li li li li li span.fancytree-node {
-  padding-left: 85px;
+	padding-left: 85px;
 }
 .ui-fancytree li li li li li li li li span.fancytree-node {
-  padding-left: 100px;
+	padding-left: 100px;
 }
 .ui-fancytree li li li li li li li li li span.fancytree-node {
-  padding-left: 115px;
+	padding-left: 115px;
 }
 .ui-fancytree li li li li li li li li li li span.fancytree-node {
-  padding-left: 130px;
+	padding-left: 130px;
 }
 .ui-fancytree li li li li li li li li li li li span.fancytree-node {
-  padding-left: 145px;
+	padding-left: 145px;
 }
 
 /* ==[ 2.5. Menus & Tooltips ]== */
 /* #root-widget not applicable therefore extended use of !important */
 .dropdown-menu {
-  margin: 0 !important;
-  padding: 3px 0 4px !important;
-  border: none !important;
-  box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
-    0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12) !important;
+	margin: 0 !important;
+	padding: 3px 0 4px !important;
+	border: none !important;
+	box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
+		0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12) !important;
 }
 .dropdown-item {
-  padding: 3px 10px 2.5px !important;
-  line-height: 24px !important;
+	padding: 3px 10px 2.5px !important;
+	line-height: 24px !important;
 }
 .dropdown-item kbd {
-  margin-left: 10px !important;
-  color: #9aa0a6 !important;
-  font-weight: 300 !important;
-  font-size: 0.8rem !important;
-  font-family: var(--main-font-family) !important;
+	margin-left: 10px !important;
+	color: #9aa0a6 !important;
+	font-weight: 300 !important;
+	font-size: 0.8rem !important;
+	font-family: var(--main-font-family) !important;
 }
 .dropdown-item span.bx {
-  margin-right: 3px !important;
-  color: #9aa0a6 !important;
-  font-size: 0.9rem !important;
-  line-height: 24px !important;
+	margin-right: 3px !important;
+	color: #9aa0a6 !important;
+	font-size: 0.9rem !important;
+	line-height: 24px !important;
 }
 .dropdown-item.disabled span {
-  color: #757d86 !important;
+	color: #757d86 !important;
 }
 .dropdown-divider,
 .modal-header,
 .modal-footer {
-  border-color: var(--midnight-background-color-tertiary) !important;
+	border-color: var(--midnight-background-color-tertiary) !important;
 }
 .dropdown-item:focus,
 .dropdown-item:hover {
-  outline: none !important;
-  border: none !important;
-  background-color: var(--midnight-background-color-tertiary) !important;
+	outline: none !important;
+	border: none !important;
+	background-color: var(--midnight-background-color-tertiary) !important;
 }
 .tooltip-inner {
-  padding: 5px 6px 6px !important;
-  font-size: 0.95rem !important;
+	padding: 5px 6px 6px !important;
+	font-size: 0.95rem !important;
 }
 
 /* ==[ 2.6. Modal Options Dialog ]== */
 #options-dialog .modal-content .modal-header {
-  padding: 10px 15px 10px 25px !important;
+	padding: 10px 15px 10px 25px !important;
 }
 .modal-content .close {
-  font-weight: inherit !important;
-  font-size: 1.3rem !important;
+	font-weight: inherit !important;
+	font-size: 1.3rem !important;
 }
 .modal-content h2,
 .modal-content h3,
 .modal-content h4,
 .modal-content h5 {
-  color: var(--main-text-color);
-  font-weight: 600 !important;
-  font-size: 1rem !important;
+	color: var(--main-text-color);
+	font-weight: 600 !important;
+	font-size: 1rem !important;
 }
 .modal-content h4 {
-  /*border-top: 1px solid rgba(230, 230, 230, 0.1) !important;*/
-  padding-top: 5px !important;
+	/*border-top: 1px solid rgba(230, 230, 230, 0.1) !important;*/
+	padding-top: 5px !important;
 }
 .modal-body > div > br {
-  display: none !important;
+	display: none !important;
 }
 .modal-content .options-advanced h4:first-child {
-  border-top: none !important;
+	border-top: none !important;
 }
 .modal-body h5 {
-  font-weight: 400 !important;
-  font-size: 1rem !important;
+	font-weight: 400 !important;
+	font-size: 1rem !important;
 }
 #options-dialog .modal-body {
-  padding: 0 !important;
-  color: #9aa0a6;
+	padding: 0 !important;
+	color: #9aa0a6;
 }
 .modal-body #override-theme-fonts {
-  width: 18px !important;
+	width: 18px !important;
 }
 #options-dialog .modal-content .tab-content {
-  padding: 24px !important;
+	padding: 24px !important;
 }
 #options-dialog .modal-content .nav-tabs {
-  padding: 0 24px;
-  border: none;
-  background-color: var(--midnight-background-color-tertiary);
+	padding: 0 24px;
+	border: none;
+	background-color: var(--midnight-background-color-tertiary);
 }
 .modal-content .nav-tabs .nav-link {
-  margin-bottom: 0;
-  border: none !important;
-  border-radius: 0 !important;
-  color: var(--main-text-color) !important;
+	margin-bottom: 0;
+	border: none !important;
+	border-radius: 0 !important;
+	color: var(--main-text-color) !important;
 }
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-  background-color: #3f4041 !important;
+	background-color: #3f4041 !important;
 }
+
+
