@@ -207,10 +207,12 @@ h6 {
 }
 #root-widget .fancytree-node {
 	border-radius: 0;
+	border: none;
 }
 .tree-actions {
 	border: 1px solid #22272e;
 	border-bottom: 0;
+    padding: 4px 0px 4px 4px !important;
 }
 #root-widget button.tree-floating-button {
 	border: none;
@@ -386,5 +388,4 @@ As an alternative its possible to add aad a script that automates this. */
 .nav-tabs .nav-link.active {
 	background-color: #3f4041 !important;
 }
-
 
