@@ -1,25 +1,28 @@
 # midnight - Theme for Trilium Notes
 
-A theme with soft dark colors and styling that aims to be pleasant to look at.  
+A theme with soft, dark colors.
 
-*The style of the theme is familiar to the theme choices of many modern programs. For e.g. it is close to VSCode's default dark themes. The creation of this theme for trilium was mainly inspired by SiYuans (PKM Tool) midnight theme.*
+_The style of the theme is similar to the theme selections of many modern programs. E.g. with the standard dark themes of VSCode, or the popular One Dark theme. The creation of this theme for Trilium was mainly inspired by SiYuan's (PKM Tool) Midnight theme._
 
 ## Preivew:
-_(Might be outdated)_
 
-![Trilium Notes - Midnight_001](https://user-images.githubusercontent.com/34311583/143969208-537b418a-39e8-4162-a87c-e712665f2fe8.jpg)
+![Preview](./preview.jpg)
+_<sup>(Might be outdated)</sup>_
 
 ## Installation
-- Create a new note inside your Trilium Notes and set the Note Type to _CSS_
-- Copy the content of the themes .css file inside the Note you just created
-- Add the label _#appCss_ 
-  - You can do that in the _Owned Attributes_ on the top of your note (Alt+A)
-  - If are currently using other custom themes, make sure the midnight theme is the only one with the _#appCss_ label 
-- Reload (Ctrl+R) 
+
+- Create a new note inside your Trilium Notes and set the Note Type to `CSS`
+- Copy the content of the themes `.css` file inside the Note you just created
+- Add the label `#appCss`
+  - You can do that in the `Owned Attributes` on the top of your note <kbd>Alt+A</kbd>
+  - If are currently using other custom themes, make sure the theme you intend to use is the only one with the `#appCss` label
+- Reload <kbd>Ctrl+R</kbd>
 
 ---
+
 Disclaimer:
-*I'm doing my best to implement improvements and fixes. Feel free to leave a message if i can help somehow.*
+_I'm not a big Trillium user anymore, since I moved all my coding and knowledge management to neovim. But I will do my best to implement improvements and fixes. If I can help in any way, feel free to leave me a message._
 
 ## Other themes I adapted to work with Trilium Notes:
+
 - EOTE: https://github.com/tobealive/eote-theme-trilum
