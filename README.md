@@ -7,7 +7,7 @@ _The style of the theme is similar to the theme selections of many modern progra
 ## Preivew:
 
 ![Preview](./preview.jpg)
-_<sup>(Might be outdated)</sup>_
+<br>_<sup>(Might be outdated)</sup>_
 
 ## Installation
 
