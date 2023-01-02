@@ -92,15 +92,6 @@ h6 {
 #root-widget .title-row {
 	margin-bottom: 15px;
 }
-#root-widget .component.title-bar-buttons {
-	height: 34px;
-}
-#root-widget .title-bar-buttons div button.icon-action,
-#root-widget .title-bar-buttons div {
-	width: 34px;
-	height: 34px;
-	font-size: 1.125rem;
-}
 #root-widget .note-title {
 	font-size: 160%;
 	line-height: 50px;
@@ -142,6 +133,15 @@ h6 {
 }
 
 /* ==[ 2.2. Tab Bar ]== */
+#root-widget .component.title-bar-buttons {
+	height: 34px;
+}
+#root-widget .title-bar-buttons div button.icon-action,
+#root-widget .title-bar-buttons div {
+	width: 34px;
+	height: 34px;
+	font-size: 1.125rem;
+}
 #root-widget .tab-row-widget {
 	margin-left: -5px;
 	padding-left: 5px;
