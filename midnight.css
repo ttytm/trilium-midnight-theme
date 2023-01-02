@@ -19,9 +19,8 @@
 	--midnight-background-color-primary: #212224;
 	--midnight-background-color-secondary: #292a2d;
 	--midnight-background-color-tertiary: #353637;
-	--midnight-font-main: "quote", "Helvetica Neue", "Luxi Sans", "DejaVu Sans",
-		"Hiragino Sans GB", "Microsoft Yahei", sans-serif, "Apple Color Emoji",
-		"Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
+	--midnight-font-main: "quote", "Helvetica Neue", "Luxi Sans", "DejaVu Sans", "Hiragino Sans GB", "Microsoft Yahei",
+		sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji",
 		"EmojiSymbols";
 	--midnight-text-color-primary: #c9d1d9;
 }
@@ -200,19 +199,17 @@ h6 {
 }
 
 /* ==[ 2.4. File Tree ]== */
-#root-widget
-	.fancytree-node:not(.fancytree-loading)
-	.fancytree-expander:before {
+#root-widget .fancytree-node:not(.fancytree-loading) .fancytree-expander:before {
 	font-size: 1rem;
 }
 #root-widget .fancytree-node {
-	border-radius: 0;
 	border: none;
+	border-radius: 0;
 }
 .tree-actions {
+	padding: 4px 0px 4px 4px !important;
 	border: 1px solid #22272e;
 	border-bottom: 0;
-    padding: 4px 0px 4px 4px !important;
 }
 #root-widget button.tree-floating-button {
 	border: none;
@@ -294,8 +291,8 @@ As an alternative its possible to add aad a script that automates this. */
 	margin: 0 !important;
 	padding: 3px 0 4px !important;
 	border: none !important;
-	box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2),
-		0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12) !important;
+	box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14),
+		0px 9px 46px 8px rgba(0, 0, 0, 0.12) !important;
 }
 .dropdown-item {
 	padding: 3px 10px 2.5px !important;
@@ -388,4 +385,3 @@ As an alternative its possible to add aad a script that automates this. */
 .nav-tabs .nav-link.active {
 	background-color: #3f4041 !important;
 }
-
