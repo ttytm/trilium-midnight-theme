@@ -243,15 +243,19 @@ h6 {
 }
 #root-widget .bx.tree-item-button {
 	position: absolute;
-	right: 0px;
-	padding: 0 10px 0 5px;
-	padding-top: 2px;
+	right: 5px;
+	width: 25px;
 	height: 38px;
 	border: none;
 	border-radius: 0;
 	background: #3f4041;
+	color: var(--left-pane-text-color);
+	text-align: center;
 	font-size: inherit;
 	line-height: 38px;
+}
+#root-widget .bx.tree-item-button.enter-workspace-button {
+	right: 30px;
 }
 #root-widget .fancytree-active .bx.tree-item-button {
 	background: var(--active-item-background-color);
@@ -396,4 +400,3 @@ As an alternative its possible to add aad a script that automates this. */
 .nav-tabs .nav-link.active {
 	background-color: #3f4041 !important;
 }
-
