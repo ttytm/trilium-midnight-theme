@@ -92,6 +92,9 @@ h6 {
 #root-widget .title-row {
 	margin-bottom: 15px;
 }
+#root-widget .title-bar-buttons div button.icon-action {
+	font-size: 1.125rem;
+}
 #root-widget .note-title {
 	font-size: 160%;
 	line-height: 50px;
@@ -166,14 +169,13 @@ h6 {
 }
 #root-widget .tab-row-widget .note-tab .note-tab-close {
 	position: relative;
-	top: 5px;
+	top: 6px;
 	height: 22px;
 }
 #root-widget .tab-row-widget .note-tab .note-tab-close span,
 #root-widget .note-new-tab {
-	top: -5px;
 	color: var(--muted-text-color);
-	font-size: inherit;
+	font-size: 0.9rem;
 }
 #root-widget .tab-row-widget .note-tab .note-tab-close:hover span {
 	color: var(--hover-item-text-color);
