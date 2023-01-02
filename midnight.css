@@ -61,7 +61,7 @@ body {
 ::-webkit-scrollbar-thumb {
 	border-width: 0 !important;
 	border-radius: 0 !important;
-	background: #4f5052 !important;
+	background: var(--midnight-text-color-primary) !important;
 }
 /* Cursors */
 .gutter.gutter-horizontal {
