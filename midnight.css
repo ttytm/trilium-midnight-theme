@@ -55,13 +55,13 @@ body {
 
 /* ==[ 1.2. General Fixes ]== */
 /* Scrollbars */
-::-webkit-scrollbar {
-	width: 8px !important;
+#root-widget ::-webkit-scrollbar {
+	width: 8px;
 }
-::-webkit-scrollbar-thumb {
-	border-width: 0 !important;
-	border-radius: 0 !important;
-	background: var(--midnight-text-color-primary) !important;
+#root-widget ::-webkit-scrollbar-thumb {
+	border-width: 0;
+	border-radius: 0;
+	background: var(--hover-item-background-color);
 }
 /* Cursors */
 .gutter.gutter-horizontal {
@@ -113,8 +113,11 @@ h6 {
 #root-widget .CodeMirror-lines {
 	font-size: 1rem;
 }
+#root-widget .CodeMirror-vscrollbar {
+	filter: invert(1);
+}
 #root-widget .cm-matchhighlight {
-	background-color: var(--main-text-color)
+	background-color: var(--main-text-color);
 }
 /* Icons */
 #root-widget #launcher-pane .icon-action,
@@ -242,7 +245,7 @@ h6 {
 }
 .ui-fancytree span.fancytree-node:hover {
 	border: none;
-	background: #3f4041;
+	background: var(--hover-item-background-color);
 }
 #root-widget .bx.tree-item-button {
 	position: absolute;
@@ -251,7 +254,7 @@ h6 {
 	height: 38px;
 	border: none;
 	border-radius: 0;
-	background: #3f4041;
+	background: var(--hover-item-background-color);
 	color: var(--left-pane-text-color);
 	text-align: center;
 	font-size: inherit;
@@ -401,5 +404,5 @@ As an alternative its possible to add aad a script that automates this. */
 }
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-	background-color: #3f4041 !important;
+	background-color: var(--hover-item-background-color) !important;
 }
