@@ -203,107 +203,131 @@ h6 {
 #root-widget #launcher-pane .global-menu-button {
 	background-size: 26px;
 }
-#root-widget #launcher-pane .icon-action {
+#root-widget #launcher-pane .launcher-button {
 	padding: 0 10px;
 	width: 46px;
 	height: 42px;
 	outline: none;
 	line-height: 42px;
 }
-#root-widget #launcher-pane .icon-action:hover {
+#root-widget #launcher-pane .launcher-button:hover {
 	background-color: transparent;
 	color: var(--main-text-color);
 }
 
 /* ==[ 2.4. File Tree ]== */
-#root-widget .fancytree-node:not(.fancytree-loading) .fancytree-expander:before {
-	font-size: 1rem;
-}
-#root-widget .fancytree-node {
-	border: none;
-	border-radius: 0;
-}
-.tree-actions {
-	padding: 4px 0px 4px 4px !important;
-	border: 1px solid #22272e;
-	border-bottom: 0;
-}
-#root-widget button.tree-floating-button {
-	border: none;
-	font-size: 1.3em;
-}
-#root-widget button.tree-floating-button:hover,
-#root-widget .bx.tree-item-button:hover {
-	color: var(--main-text-color);
-}
-.ui-fancytree span.fancytree-active,
-.ui-fancytree span.fancytree-active.fancytree-selected {
-	border: none;
-}
-#root-widget span.fancytree-active .fancytree-title {
-	font-weight: 400;
-}
-.ui-fancytree span.fancytree-node:hover {
-	border: none;
-	background: var(--hover-item-background-color);
-}
-#root-widget .bx.tree-item-button {
-	position: absolute;
-	right: 5px;
-	width: 25px;
-	height: 38px;
-	border: none;
-	border-radius: 0;
-	background: var(--hover-item-background-color);
-	color: var(--left-pane-text-color);
-	text-align: center;
-	font-size: inherit;
-	line-height: 38px;
-}
-#root-widget .bx.tree-item-button.enter-workspace-button {
-	right: 30px;
-}
-#root-widget .fancytree-active .bx.tree-item-button {
-	background: var(--active-item-background-color);
-}
 /* Use full width background for hover and active state of nested list items. 
 Extend the code below for deeper nesting structure if neccecary.
 As an alternative its possible to add aad a script that automates this. */
 #root-widget .ui-fancytree ul {
 	padding-left: 0;
 }
-.ui-fancytree > li > span.fancytree-node {
+#root-widget .fancytree-node {
 	padding-left: 10px;
+	border: 0;
+	border-radius: 0;
 }
-.ui-fancytree > li > ul > li > span.fancytree-node {
-	padding-left: 10px;
+#root-widget .ui-fancytree li li li .fancytree-node {
+	padding-left: 27px;
 }
-.ui-fancytree li li li span.fancytree-node {
-	padding-left: 25px;
+#root-widget .ui-fancytree li li li li .fancytree-node {
+	padding-left: 46px;
 }
-.ui-fancytree li li li li span.fancytree-node {
-	padding-left: 40px;
+#root-widget .ui-fancytree li li li li li .fancytree-node {
+	padding-left: 65px;
 }
-.ui-fancytree li li li li li span.fancytree-node {
-	padding-left: 55px;
+#root-widget .ui-fancytree li li li li li li .fancytree-node {
+	padding-left: 84px;
 }
-.ui-fancytree li li li li li li span.fancytree-node {
-	padding-left: 70px;
+#root-widget .ui-fancytree li li li li li li li .fancytree-node {
+	padding-left: 103px;
 }
-.ui-fancytree li li li li li li li span.fancytree-node {
-	padding-left: 85px;
+#root-widget .ui-fancytree li li li li li li li li .fancytree-node {
+	padding-left: 122px;
 }
-.ui-fancytree li li li li li li li li span.fancytree-node {
-	padding-left: 100px;
+#root-widget .ui-fancytree li li li li li li li li li .fancytree-node {
+	padding-left: 141px;
 }
-.ui-fancytree li li li li li li li li li span.fancytree-node {
-	padding-left: 115px;
+#root-widget .ui-fancytree li li li li li li li li li li .fancytree-node {
+	padding-left: 150px;
 }
-.ui-fancytree li li li li li li li li li li span.fancytree-node {
-	padding-left: 130px;
+#root-widget .fancytree-node:hover {
+	background: var(--hover-item-background-color);
 }
-.ui-fancytree li li li li li li li li li li li span.fancytree-node {
-	padding-left: 145px;
+/* Collapse / Expand Icon */
+#root-widget .fancytree-node .fancytree-expander:before {
+	font-size: 1em;
+}
+/* Tree-Node Title */
+#root-widget .fancytree-node.fancytree-title {
+	top: 1px;
+}
+#root-widget .fancytree-node.fancytree-active .fancytree-title {
+	font-weight: 400;
+}
+/* Tree Icons & Buttons */
+#root-widget .tree-actions {
+	border: 1px solid #22272e;
+	border-bottom: 0;
+}
+#root-widget .tree-item-button,
+#root-widget .fancytree-custom-icon {
+	z-index: 1;
+	border: 0;
+	font-size: 1.125em;
+}
+#root-widget .tree-item-button {
+	color: var(--left-pane-text-color);
+}
+#root-widget .tree-item-button:not(.unhoist-button) {
+	position: absolute;
+	right: 10px;
+}
+#root-widget .tree-item-button.unhoist-button {
+	position: relative;
+}
+#root-widget .tree-item-button.enter-workspace-button {
+	right: 38px;
+}
+#root-widget .tree-item-button:hover {
+	color: var(--main-text-color);
+}
+#root-widget .tree-item-button::before {
+	position: relative;
+	z-index: 1;
+}
+#root-widget .tree-item-button::after {
+	position: absolute;
+	left: 0;
+	z-index: 0;
+	padding: 1px;
+	width: 100%;
+	height: 100%;
+	border-radius: 3px;
+	background: transparent;
+	content: "";
+	opacity: 0.75;
+	transition: opacity 100ms;
+}
+#root-widget .fancytree-node.fancytree-active:hover .tree-item-button::after {
+	background: var(--active-item-background-color);
+}
+#root-widget .fancytree-node:hover .tree-item-button::after {
+	background: var(--hover-item-background-color);
+}
+#root-widget .tree-item-button:hover::after {
+	opacity: 1;
+}
+#root-widget .tree-item-button:hover,
+#root-widget button.tree-floating-button:hover {
+	color: var(--active-item-text-color);
+}
+#root-widget button.tree-floating-button {
+	border: none;
+	font-size: 1.25rem;
+}
+#root-widget button.tree-floating-button:hover {
+	color: var(--active-item-text-color);
 }
 
 /* ==[ 2.5. Menus & Tooltips ]== */
