@@ -111,7 +111,7 @@ h6 {
 	background-color: var(--main-text-color);
 }
 /* Icons */
-#root-widget #launcher-pane .icon-action,
+#root-widget #launcher-pane .launcher-button,
 #root-widget .ribbon-tab-title .bx {
 	text-align: center;
 	font-size: 1.3rem;
@@ -207,7 +207,7 @@ h6 {
 	padding: 0 10px;
 	width: 46px;
 	height: 42px;
-	outline: none;
+	outline: 0;
 	line-height: 42px;
 }
 #root-widget #launcher-pane .launcher-button:hover {
@@ -377,4 +377,3 @@ As an alternative its possible to add aad a script that automates this. */
 #root-widget .tooltip .arrow {
 	opacity: 0.8;
 }
-
