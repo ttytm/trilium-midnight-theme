@@ -136,8 +136,8 @@ h6 {
 #root-widget .component.title-bar-buttons {
 	height: 34px;
 }
-#root-widget .title-bar-buttons div button.icon-action,
-#root-widget .title-bar-buttons div {
+#root-widget .title-bar-buttons div,
+#root-widget .title-bar-buttons button.btn {
 	width: 34px;
 	height: 34px;
 	font-size: 1.125rem;
@@ -377,3 +377,4 @@ As an alternative its possible to add aad a script that automates this. */
 #root-widget .tooltip .arrow {
 	opacity: 0.8;
 }
+
