@@ -380,3 +380,8 @@ As an alternative its possible to add aad a script that automates this. */
 .tooltip .arrow {
 	opacity: 0.8 !important;
 }
+.ck-content pre {
+    background: var(--left-pane-background-color)!important;
+    border: 1px solid var(--launcher-pane-background-color)!important;
+    --ck-color-code-block-label-background: var(--launcher-pane-background-color);
+}
